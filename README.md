@@ -1,6 +1,6 @@
 # Changelog CLI
 
-This CLI exports commit activity for every repository in a GitHub organisation into CSV format. It relies on your existing `gh` authentication to reach private repos.
+This CLI exports commit activity for every repository in a GitHub organisation into CSV format. It relies on your existing `gh` authentication to reach private repos and is designed to help assemble evidence for Australian R&D Tax Incentive claims.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ go run . \
 - `--org` *(required)*: GitHub organisation slug.
 - `--fy` *(required)*: Australian financial year (e.g. `25` for FY24-25).
 - `--main-branch`: Base branch used when checking merge status (defaults to `main`).
-- `--ignore-user`: Repeatable flag to exclude specific GitHub usernames as author, committer, or co-author.
+- `--ignore-user`: Repeatable flag to exclude specific GitHub usernames as author, committer, or co-author—ideal for filtering out contributors located outside Australia.
 
 ## Output
 

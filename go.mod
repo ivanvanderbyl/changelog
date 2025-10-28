@@ -1,4 +1,4 @@
-module github.com/Alcova-AI/changelog
+module github.com/ivanvanderbyl/changelog
 
 go 1.25.1
 
